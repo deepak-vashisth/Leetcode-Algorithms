@@ -1,0 +1,26 @@
+class Solution:
+    def removeVowels(self, S: str) -> str:
+        vowels=('aeiou');
+        for x in S:
+            if x in vowels:
+                S=S.replace(x,"")
+        return S;
+
+
+
+/*
+
+Given a string S, remove the vowels 'a', 'e', 'i', 'o', and 'u' from it, and return the new string.
+
+ 
+
+Example 1:
+
+Input: "leetcodeisacommunityforcoders"
+Output: "ltcdscmmntyfrcdrs"
+Example 2:
+
+Input: "aeiou"
+Output: ""
+
+*/
